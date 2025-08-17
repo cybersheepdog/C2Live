@@ -30,7 +30,7 @@ Now you can continue below to install the requirements and run the program.
 ## To run the project:
 ### Install requirements.txt
 `pip3 install -r requirements.txt`
-### lunch the docker compose
+### launch the docker compose
 > Note: Make sure to have docker compose installed :)
 
 
