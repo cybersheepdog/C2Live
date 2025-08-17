@@ -1,17 +1,23 @@
 # C2Live
 
+[![Build Status](https://img.shields.io/badge/platform-Linux-blue.svg)](https://shields.io/)
+![Maintenance](https://img.shields.io/maintenance/yes/2025.svg?style=flat-square)
+[![GitHub last commit](https://img.shields.io/github/last-commit/cybersheepdog/C2Live.svg?style=flat-square)](https://github.com/cybersheepdog/C2Live/commit/main)
+![GitHub](https://img.shields.io/github/license/cybersheepdog/C2Live)
+
+## Update: 
+Code has been updated to pull down both the older Nightly commits and the newer Weekly commits from [C2Tracker](https://github.com/montysecurity/C2-Tracker).  This was not pulling down the data for the most recent commits of the C2 data as it changed from Nightly to Weekly between July 2nd, 2024 and July 8, 2024.
+
 
 C2Live is an open-source project aimed at providing a comprehensive and interactive platform for tracking C2 servers, tools, and botnets malicious IP addresses over time. This project focuses on categorizing and visualizing these IPs based on the framework they are associated with and the country they originate from. The goal is to help security professionals, researchers, and organizations gain insights into the evolving landscape of cyber threats. This project is based on [C2Tracker](https://github.com/montysecurity/C2-Tracker) from [@_montysecurity](https://twitter.com/_montysecurity).
 
 
-Provided by [@Y_NeXRo](https://twitter.com/Y_NeXRo),[ikuroNoriiwa](https://github.com/ikuroNoriiwa), and [cybersheepdog](https://github.com/cybersheepdog)
+Provided by [@Y_NeXRo](https://twitter.com/Y_NeXRo), [ikuroNoriiwa](https://github.com/ikuroNoriiwa), and [cybersheepdog](https://github.com/cybersheepdog)
 
 
 ![alt text](https://github.com/cybersheepdog/C2Live/blob/main/preview.jpg?raw=true)
 
 The website version at [c2tracker.com](https://c2tracker.com)
-
-## Update: Code has been updated to pull down both the older Nightly commits and the newer Weekly commits from [C2Tracker](https://github.com/montysecurity/C2-Tracker).  This was not pulling down the data for the most recent commits of the C2 data as it changed from Nightly to Weekly quite some time ago.
 
 ## Recommended Install method
 In order to keep your main python installation on your system a bit cleaner and not have any conflicting requirement version betwen differnt scripts I recommend you creat this in a virtual environment on your system.
@@ -79,6 +85,6 @@ optional arguments:
   --days DAYS, -n DAYS  Number of history commits from source url 
 
 ```
-### make a cron with main.py to ingest data weekly.
+### make a cron with main.py to ingest data weekly on Mondays.
 
 
