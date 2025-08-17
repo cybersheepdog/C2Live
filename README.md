@@ -42,6 +42,7 @@ Now you can continue below to install the requirements and run the program.
 > 
 ### launch the connectors.py 
 `python3 connectors.py`  
+
 It will create geoip pipeline,elastic connector to grafana and import a default dashboard.
 ### lunch main.py
 #### Todays datas
@@ -50,7 +51,7 @@ It will ingest todays data so you will only have 1 day of data.
 #### Past datas
 You can also ingest past datas  
 `python3 main.py -u http://localhost:9200/ -n <number_of_history_commits>`  
-> Note: number of history commits is normally equivalent of 1 day. So ingesting 10 history commits will ingest past 10 days datas.
+> Note: After July 2, 2024, history commits are equivalent of 1 seek instead of 1 day.  So ingesting 10 history commits will ingest the past 10 weeks of data. Prior to that point it will be 1 day worth of data.
 
  
 You can enjoy grafana dashboard on `http://localhost:3000/ `  
