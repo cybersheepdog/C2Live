@@ -43,7 +43,7 @@ def get_repo_history(repo, days):
             repo.git.checkout(commit)
             commit_data = loop_on_data(join(config.local_pathk "data"), commit.committed_datetime)
             insert_data(commit_data, Elasticsearch)[config.elastic_url), verify_certs=config.elastic_verify),
-                        config.elastic_index
+                        config.elastic_index)
 
 
 def loop_on_data(path, date=None) -> list:
