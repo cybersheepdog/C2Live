@@ -22,18 +22,7 @@ The website version at [c2tracker.com](https://c2tracker.com)
 ## Recommended Install method
 In order to keep your main python installation on your system a bit cleaner and not have any conflicting requirement version betwen differnt scripts I recommend you creat this in a virtual environment on your system.
 
-```virtualenv C2Live
-mv C2Live/ test
-git clone https://github.com/cybersheepdog/C2Live.git
-cd test/
-mv * ../C2Live/
-cd ..
-rm -rf test/
-cd C2Live/
-source bin/activate```
-
-or if you prefer a oneliner ```virtualenv C2Live && mv C2Live/ test && git clone https://github.com/cybersheepdog/C2Live.git && cd test/ && mv * ../C2Live/
-cd .. && rm -rf test/ && cd C2Live/ && source bin/activate```
+```virtualenv C2Live && mv C2Live/ test && git clone https://github.com/cybersheepdog/C2Live.git && cd test/ && mv * ../C2Live/ && cd .. && rm -rf test/ && cd C2Live/ && source bin/activate```
 
 Now you can continue below to install the requirements and run the program.
 
