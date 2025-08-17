@@ -30,7 +30,7 @@ Now you can continue below to install the requirements and run the program.
 ## To run the project:
 ### Install requirements.txt
 `pip3 install -r requirements.txt`
-### launch the docker compose
+### Launch the docker compose
 > Note: Make sure to have docker compose installed :)
 
 
@@ -40,11 +40,11 @@ Now you can continue below to install the requirements and run the program.
 
 `docker compose -f elastic-grafana-docker-compose.yaml up -d`
 > 
-### launch the connectors.py 
+### Launch the connectors.py 
 `python3 connectors.py`  
 
 It will create geoip pipeline,elastic connector to grafana and import a default dashboard.
-### lunch main.py
+### Launch main.py
 #### Todays datas
 `python3 main.py -u http://localhost:9200/  `  
 It will ingest todays data so you will only have 1 day of data. 
