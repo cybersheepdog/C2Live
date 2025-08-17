@@ -2,3 +2,6 @@ elasticsearch-data/
 grafana-data/
 venv/
 .idea
+bin/
+lib/
+pyvenv.cfg

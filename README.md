@@ -4,12 +4,33 @@
 C2Live is an open-source project aimed at providing a comprehensive and interactive platform for tracking C2 servers, tools, and botnets malicious IP addresses over time. This project focuses on categorizing and visualizing these IPs based on the framework they are associated with and the country they originate from. The goal is to help security professionals, researchers, and organizations gain insights into the evolving landscape of cyber threats. This project is based on [C2Tracker](https://github.com/montysecurity/C2-Tracker) from [@_montysecurity](https://twitter.com/_montysecurity).
 
 
-Provided by [@Y_NeXRo](https://twitter.com/Y_NeXRo) and [ikuroNoriiwa](https://github.com/ikuroNoriiwa)  
+Provided by [@Y_NeXRo](https://twitter.com/Y_NeXRo),[ikuroNoriiwa](https://github.com/ikuroNoriiwa), and [cybersheepdog](https://github.com/cybersheepdog)
 
 
-![alt text](https://github.com/YoNixNeXRo/C2Live/blob/main/preview.jpg?raw=true)
+![alt text](https://github.com/cybersheepdog/C2Live/blob/main/preview.jpg?raw=true)
 
 The website version at [c2tracker.com](https://c2tracker.com)
+
+## Update: Code has been updated to pull down both the older Nightly commits and the newer Weekly commits from [C2Tracker](https://github.com/montysecurity/C2-Tracker).  This was not pulling down the data for the most recent commits of the C2 data as it changed from Nightly to Weekly quite some time ago.
+
+## Recommended Install method
+In order to keep your main python installation on your system a bit cleaner and not have any conflicting requirement version betwen differnt scripts I recommend you creat this in a virtual environment on your system.
+
+```virtualenv C2Live
+mv C2Live/ test
+git clone https://github.com/cybersheepdog/C2Live.git
+cd test/
+mv * ../C2Live/
+cd ..
+rm -rf test/
+cd C2Live/
+source bin/activate```
+
+or if you prefer a oneliner ```virtualenv C2Live && mv C2Live/ test && git clone https://github.com/cybersheepdog/C2Live.git && cd test/ && mv * ../C2Live/
+cd .. && rm -rf test/ && cd C2Live/ && source bin/activate```
+
+Now you can continue below to install the requirements and run the program.
+
 
 ## To run the project:
 ### Install requirements.txt
@@ -58,6 +79,6 @@ optional arguments:
   --days DAYS, -n DAYS  Number of history commits from source url 
 
 ```
-### make a cron with main.py to ingest data daily
+### make a cron with main.py to ingest data weekly.
 
 
