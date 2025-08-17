@@ -34,7 +34,7 @@ Now you can continue below to install the requirements and run the program.
 > Note: Make sure to have docker compose installed :)
 
 
-`docker-compose -f elastic-grafana-docker-compose.yaml up`
+`docker-compose -f elastic-grafana-docker-compose.yaml up -d`
 ### lunch the connectors.py 
 `python3 connectors.py`  
 It will create geoip pipeline,elastic connector to grafana and import a default dashboard.
